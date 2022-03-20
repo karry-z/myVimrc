@@ -14,7 +14,8 @@ noremap L 5l
 " -----------------------------------------------
 " backspace删除到上一行
 set backspace=2
-" 语法高亮 " set syntax=on 这是8.0以前的，下面是8.0的
+" 语法高亮 " 
+set syntax=on "这是8.0以前的，下面是8.0的
 syntax on
 " 标出当前行
 set cursorline
@@ -69,8 +70,6 @@ set autoread
 autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
 "代码补全 
 set completeopt=preview,menu 
-"允许插件  
-filetype plugin on
 "共享剪贴板  
 set clipboard=unnamed 
 "从不备份  
@@ -109,32 +108,5 @@ filetype off                  " required
 
 
 
+source plugin.vimrc
 
-""""""""""""""""""""""""-------------vim-plug---------------"""""""""""""""""""""""""""""""""""""""""
-" if empty(glob('~/.vim/autoload/plug.vim'))
-"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-" endif
-" call plug#begin('~/.vim/plugged')
-
-" """"""""""
-" " vim状态栏
-" """"""""""
-" Plug 'vim-airline/vim-airline' 
-
-
-
-
-" """"""""""
-" " Markdown
-" """"""""""
-" Plug 'iamcco/mathjax-support-for-mkdp'
-" Plug 'iamcco/markdown-preview.vim'
-" noremap vv :MarkdownPreview<CR>
-" noremap s :MarkdownPreviewStop<CR>
-
-
-
-" call plug#end()
-" ####################################################################################

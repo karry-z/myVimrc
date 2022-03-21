@@ -24,4 +24,8 @@ setxkbmap -option caps:escape
 # VSCode使用vim
 vscode和vim各有优缺点，笔者常在各种不同场景中配合使用。vscode中也有vim插件，使用时在vscode中简单配置，但要想达到vim中的效果，可能还要差一些。同时，vscode中可以同步用户配置，这里我取消了vim插件的同步。
 
+# vim剪切板
+vim剪切板和系统剪切板是分开的，若要将vim打开的这个文件复制到别处，需要确保vim的剪切板支持复制到系统剪切板，具体方法可以参考[^2]。
+
 [^1]:https://www.vim.org/docs.php
+[^2]:https://zhuanlan.zhihu.com/p/73984381

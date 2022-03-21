@@ -108,5 +108,5 @@ filetype off                  " required
 
 
 
-source plugin.vimrc
+source ~/.vim/plugin.vimrc
 

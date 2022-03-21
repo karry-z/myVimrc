@@ -27,5 +27,9 @@ vscode和vim各有优缺点，笔者常在各种不同场景中配合使用。vs
 # vim剪切板
 vim剪切板和系统剪切板是分开的，若要将vim打开的这个文件复制到别处，需要确保vim的剪切板支持复制到系统剪切板，具体方法可以参考[^2]。
 
+# vim插件
+vim中有很多优秀的插件，本项目中`plugin.vimrc`文件就是配置插件的。这里我们用一个轻量的vim-plug来管理插件。下载插件时，可能会用到raw.githubusercontent.com，这个网址可能开着代理时也访问不了，文章[^3]描述了修改hosts的方案。
+
 [^1]:https://www.vim.org/docs.php
 [^2]:https://zhuanlan.zhihu.com/p/73984381
+[^3]:https://blog.csdn.net/yihui8/article/details/109188924
